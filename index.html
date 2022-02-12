@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Wordables</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<style>
 			body {
@@ -21,9 +21,11 @@
 
 			div.content
 			{
-				margin: auto;
-				margin-top: 4em;
-				width: 16em;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
 			}
 
 			input, button
@@ -39,7 +41,6 @@
 			input
 			{
 				margin-right: 1em;
-				width: 12em;
 			}
 
 			div.inputs
@@ -60,7 +61,6 @@
 				color: #FFF;
 				border-radius: 4px;
 				margin-bottom: 1em;
-				width: 16em;
 			}
 
 			p {
