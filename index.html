@@ -46,6 +46,7 @@
 			div.inputs
 			{
 				white-space: nowrap;
+				margin-bottom: 1em;
 			}
 
 			ul {
@@ -71,6 +72,9 @@
 	</head>
 	<body>
 		<div class="content">
+			<div class="inputs">
+				<input id="input" placeholder="....." maxlength="5"></input><button onclick="checkInput()">!</button>
+			</div>
 			<div class="focus">
 				<ul>
 					<li id="0">?????</li>
@@ -82,10 +86,6 @@
 				</ul>
 
 				<p id="output">-----</p>
-			</div>
-			
-			<div class="inputs">
-				<input id="input" placeholder="....." maxlength="5"></input><button onclick="checkInput()">!</button>
 			</div>
 		</div>
 	</body>
