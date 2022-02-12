@@ -91,9 +91,10 @@
 	</body>
 	<script>
 		// Mobile compatibility code:
-		input.onfocus = function()
+		document.getElementById("input").onfocus = function()
 		{
-			window.scrollBy(0, 0);
+			window.scrollTo(0, 0);
+			document.body.scrollTop = 0;
 		}
 		
 		// Our word list:
